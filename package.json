@@ -1,0 +1,14 @@
+{
+  "name": "com.silicom.client",
+  "version": "1.0.0",
+  "displayName": "Silicom Client",
+  "description": "TODO Descrition",
+  "unity": "2019.3",
+  "author": {
+    "name": "Jimmy DYON",
+    "email": "jdyon@silicom.fr"
+  },
+  "dependencies": {
+    "com.unity.textmeshpro": "3.0.0-preview.12"
+  }
+}

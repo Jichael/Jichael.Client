@@ -1,0 +1,19 @@
+{
+    "name": "Silicom.Name",
+    "references": [
+        "GUID:47b5be20484e95f4ba56d0fa118ce67a",
+        "GUID:6055be8ebefd69e48b49212b09b47b2f",
+        "GUID:12964145280dd7145b58904e30e405f4"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": true,
+    "precompiledReferences": [
+        "Newtonsoft.Json.dll"
+    ],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
