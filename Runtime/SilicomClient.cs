@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace Silicom.Name
+namespace Silicom.Client
 {
     public class SilicomClient : MonoBehaviour
     {

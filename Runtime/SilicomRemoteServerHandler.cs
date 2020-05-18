@@ -4,7 +4,7 @@ using BestHTTP.SocketIO.Transports;
 using Newtonsoft.Json;
 using UnityEngine;
 
-namespace Silicom.Name
+namespace Silicom.Client
 {
     public class SilicomRemoteServerHandler : SilicomServerHandler
     {

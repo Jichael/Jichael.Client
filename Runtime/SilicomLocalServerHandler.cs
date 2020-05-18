@@ -1,4 +1,4 @@
-namespace Silicom.Name
+namespace Silicom.Client
 {
     public class SilicomLocalServerHandler : SilicomServerHandler
     {

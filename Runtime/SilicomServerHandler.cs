@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace Silicom.Name
+namespace Silicom.Client
 {
     public abstract class SilicomServerHandler : MonoBehaviour
     {
