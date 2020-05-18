@@ -11,30 +11,27 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - run: |
-          for i in `ls -d */`; do
-            git checkout master
-            branch=${i::-1}
-            if [ `git branch --list $branch` ]; then
-              git branch -d $branch
-            fi;
-            git subtree split -P $branch -b $branch
-            git checkout $branch
-            git config --global user.name 'github-bot'
-            git config --global user.email 'github-bot@users.noreply.github.com'
-            if [[ -d "Samples" ]]; then
-              git mv Samples Samples~
-              rm -f Samples.meta
-              git commit -am "rename: Samples => Samples~"
-              git push -f -u origin $branch
-            else
-              echo "${i}Samples does not exist"
-            fi
-            if [[ -d "Documentation" ]]; then
-              git mv Documentation Documentation~
-              rm -f Documentation.meta
-              git commit -am "rename: Documentation => Documentation~"
-              git push -f -u origin $branch
-            else
-              echo "${i}Documentation does not exist"
-            fi
-          done;
+        git checkout master
+        branch=${i::-1}
+        if [ `git branch --list $branch` ]; then
+          git branch -d $branch
+        fi;
+        git checkout $branch
+        git config --global user.name 'github-bot'
+        git config --global user.email 'github-bot@users.noreply.github.com'
+        if [[ -d "Samples" ]]; then
+          git mv Samples Samples~
+          rm -f Samples.meta
+          git commit -am "rename: Samples => Samples~"
+          git push -f -u origin $branch
+        else
+          echo "${i}Samples does not exist"
+        fi
+        if [[ -d "Documentation" ]]; then
+          git mv Documentation Documentation~
+          rm -f Documentation.meta
+          git commit -am "rename: Documentation => Documentation~"
+          git push -f -u origin $branch
+        else
+          echo "${i}Documentation does not exist"
+        fi
